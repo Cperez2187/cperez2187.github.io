@@ -593,7 +593,7 @@ h1, h2, h3, h4, h5, h6, figure {
     display: table-cell;
     vertical-align: middle;
     height: 270px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.67);
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;

@@ -760,7 +760,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		display: table-cell;
 		vertical-align: middle;
 		height: 270px;
-		background: $brand-white;
+		background: rgba($brand-white,.67);
 		opacity: 0;
 		@include transition(.3s);
 		h3{
