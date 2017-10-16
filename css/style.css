@@ -790,7 +790,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer {
   padding: 50px 0;
   float: left;
-  width: 100%; }
+  width: 100%;
+  color: #fff; }
   #fh5co-footer p:last-child {
     margin-bottom: 0; }
 
@@ -899,8 +900,8 @@ input[type="text"] {
     outline: none !important; }
 
 .btn-primary {
-  background: #31708E;
-  color: #fff;
+  background: #fff;
+  color: #31708E;
   border: 2px solid #31708E; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #387fa1 !important;
@@ -1008,7 +1009,7 @@ input[type="text"] {
 
 .form-control {
   box-shadow: none;
-  background: transparent;
+  background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
   font-size: 18px;

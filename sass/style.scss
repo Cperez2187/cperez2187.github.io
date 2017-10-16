@@ -986,6 +986,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	padding: 50px 0;
 	float: left;
 	width: 100%;
+	color: $brand-white;
 	p {
 		&:last-child {
 			margin-bottom: 0;
@@ -1111,8 +1112,8 @@ input[type="text"] {
 	}
 }
 .btn-primary {
-	background: $brand-primary;
-	color: $brand-white;
+	background: $brand-white;
+	color: $brand-primary;
 	border: 2px solid $brand-primary;
 	&:hover, &:focus, &:active {
 		background: lighten($brand-primary, 5%)!important;
@@ -1236,7 +1237,7 @@ input[type="text"] {
 // Form Input Field
 .form-control {
 	box-shadow: none;
-	background: transparent;
+	background: $brand-white;
 	border: 2px solid rgba(0, 0, 0, 0.1);
 	height: 54px;
 	font-size: 18px;
