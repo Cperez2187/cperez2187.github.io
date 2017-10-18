@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-blog,
 #fh5co-pricing,
 #fh5co-contact{
-	padding: 7em 0;
+	padding: 5em 0;
 	clear: both;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
@@ -780,7 +780,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			transform: translate3d(0, 15px, 0);
 		}
 		@media screen and(max-width: $screen-sm){
-			opacity: 1;
+			opacity: 0;
 			background: rgba($brand-white,.6);
 			h3{
 				-webkit-transform: translate3d(0, 0, 0);
@@ -959,6 +959,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	.choose{
 		width: 50%;
 		padding: 4em;
+		margin-bottom: 0;
 		@media screen and(max-width: $screen-sm){
 			width: 100%;
 			padding: 4em 1em;
@@ -986,7 +987,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	padding: 50px 0;
 	float: left;
 	width: 100%;
-	color: $brand-white;
+	color: $brand-primary;
 	p {
 		&:last-child {
 			margin-bottom: 0;
