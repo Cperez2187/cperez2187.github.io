@@ -146,4 +146,45 @@
 	});
 
 
+// Contact form
+$('#contact-form').submit(function (e) {
+	var email 	= $('#email'),
+			subject = $('#subject'),
+			message = $('#message');
+
+	console.log('email = ', email['0'].value);
+	console.log('subject = ', subject['0'].value);
+	console.log('message = ', message['0'].value);
+
+	//if any field is empty
+	if (!email['0'].value || !subject['0'].value || !message['0'].value) {
+		// Display error message
+		$('#contact-form').append('<div class="alert alert-danger" role="alert">Oh snap! One of the fields is missing. Try again.</div>');
+		// Prevent browser from redirecting
+		e.preventDefault();
+
+	} else {
+		// Make request to send email
+		$.ajax({
+			url: "https://formspree.io/cperez2187@gmail.com", 
+			method: "POST",
+			data: $(this).serialize(),
+			dataType: "json"
+		}).then(function (data, textStatus) {
+			console.log(textStatus);
+			console.log('Success!');
+			// Reset form fields
+			$(this).get(0).reset();
+			// Display success message
+			$('#contact-form').append('<div class="alert alert-success" role="alert">Message sent.</div>');
+		}, function (jqXHR, textStatus) {
+			console.log(textStatus);
+		});
+		// Prevent browser from redirecting
+		e.preventDefault();
+		
+	}
+});
+
+
 }());
