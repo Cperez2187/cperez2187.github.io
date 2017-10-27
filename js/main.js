@@ -173,8 +173,6 @@ $('#contact-form').submit(function (e) {
 		}).then(function (data, textStatus) {
 			console.log(textStatus);
 			console.log('Success!');
-			// Reset form fields
-			$(this).get(0).reset();
 			// Display success message
 			$('#contact-form').append('<div class="alert alert-success" role="alert">Message sent.</div>');
 		}, function (jqXHR, textStatus) {
@@ -182,6 +180,8 @@ $('#contact-form').submit(function (e) {
 		});
 		// Prevent browser from redirecting
 		e.preventDefault();
+		// Reset form fields
+		$(this).get(0).reset();
 		
 	}
 });
